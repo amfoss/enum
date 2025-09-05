@@ -1,1 +1,7 @@
 fastapi[standard]
+langchain-community
+rapidocr-onnxruntime
+pillow
+
+pandas
+openpyxl
