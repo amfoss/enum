@@ -25,3 +25,14 @@ Create a data.json to store members:
   }
 }
 ```
+## Running with Docker Compose
+
+Create a .env file with your Cloudflare tunnel token:
+```.env
+CLOUDFLARE_TUNNEL_TOKEN=xxx
+```
+
+Start the containers:
+```bash
+docker compose up
+```
