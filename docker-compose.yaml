@@ -5,7 +5,7 @@ services:
     restart: always
     expose:
       - "8000"
-    command: uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
+    command: gunicorn -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:8001 --workers 2
 
   nginx:
     image: nginx:alpine
